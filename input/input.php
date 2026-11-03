@@ -1,5 +1,5 @@
 <?php
-$kecamatan = $_POST['kecamatan'];  
+$kecamatan = $_POST['kecamatan'];    //menerima daata yang dikirim dari formulir
 $longitude = $_POST['longitude']; 
 $latitude = $_POST['latitude']; 
 $luas = $_POST['luas']; 

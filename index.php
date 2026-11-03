@@ -4,7 +4,7 @@ $username= "root";
 $password="";
 $dbname="latihan";
 
-$conn= new mysqli($servername, $username, $password, $dbname);
+$conn= new mysqli($servername, $username, $password, $dbname); //menghubungkan PHP dengan MySQL
 
 if($conn->connect_error){
     die("Connection failed:".$conn->connect_error);
@@ -24,7 +24,7 @@ if($result->num_rows > 0){
             <th>Luas</th>
             <th>Jumlah Penduduk</th>";
     
-    while($row = $result->fetch_assoc()) {
+    while($row = $result->fetch_assoc()) {     //mengambil data dari hasil query per baris
         echo "<tr>";
         echo "<td>" . $row["id"] . "</td>";
         echo "<td>" . $row["Kecamatan"] . "</td>";
